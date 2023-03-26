@@ -24,8 +24,11 @@ class Solution{
             {
                 if(arr[i] + arr[j] + arr[k] == 0)
                 {
-                    c++;
+                    //chcks if present
                     return 1;
+                    
+                    //finds total triplet
+                    c++;
                 }
                 else if(arr[i] + arr[j] + arr[k] > 0)
                 {
