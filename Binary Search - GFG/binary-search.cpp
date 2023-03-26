@@ -8,7 +8,9 @@ using namespace std;
 // } Driver Code Ends
 // User function template for C++
 
-class Solution {
+class Solution 
+{
+    //Recursive Way
     int binarySearch(int arr[], int start, int end, int key)
     {
         int mid = (start + end)/2;
