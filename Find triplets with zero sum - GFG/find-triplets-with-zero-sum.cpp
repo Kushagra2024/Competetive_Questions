@@ -25,7 +25,7 @@ class Solution{
                 if(arr[i] + arr[j] + arr[k] == 0)
                 {
                     c++;
-                    return c;
+                    return 1;
                 }
                 else if(arr[i] + arr[j] + arr[k] > 0)
                 {
