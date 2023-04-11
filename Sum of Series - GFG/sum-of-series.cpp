@@ -9,9 +9,8 @@ class Solution{
 public:
 	// function to return sum of  1, 2, ... n
 	long long seriesSum(int n) {
-	    long long int pro, sum;
-	    pro = n * 1ll * (n+1);
-	    sum = pro/2;
+	    long long int sum;
+	    sum = (n * 1ll * (n + 1))/2;
 	    return sum;
 	}
 };
