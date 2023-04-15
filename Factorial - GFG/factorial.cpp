@@ -16,7 +16,6 @@ public:
         return (N * factorial(N-1));
         
         //iterative way
-        // long long int ans = 1;
         // for(int i = N; i > 0; i--)
         // {
         //     ans *= i;
