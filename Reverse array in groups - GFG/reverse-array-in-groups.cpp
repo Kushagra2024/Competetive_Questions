@@ -23,11 +23,9 @@ public:
     //Function to reverse every sub-array group of size k.
     void reverseInGroups(vector<long long>& arr, int n, int k)
     {
-        int e = -1, s = 0;
-        while(s < n)
+        for(int s = 0; s <= n; s += k)
         {
-            s = e + 1;
-            e = min(s + k - 1, n-1);
+            int e = min(s+k-1, n-1);
             rev(arr, s, e);
         }
     }
