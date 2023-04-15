@@ -35,7 +35,9 @@ class Solution
     {
         int sum = 0;
         int temp[n] = {0};
-        temp[arr[0]-1] = time[0];
+        
+        //
+        temp[arr[0]-1] = 1;
         for(int i = 1; i < n; i++)
         {
             if(temp[arr[i]-1])
