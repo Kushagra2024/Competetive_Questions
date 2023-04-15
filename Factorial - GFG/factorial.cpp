@@ -5,15 +5,23 @@ using namespace std;
 // } Driver Code Ends
 class Solution{
 public:
+    long long int ans = 1;
     long long int factorial(int N)
     {
-        //iterative way
-        long long int ans = 1;
-        for(int i = N; i > 0; i--)
+        //recursive way
+        if(N == 0)
         {
-            ans *= i;
+            return ans;
         }
-        return ans;
+        return (N * factorial(N-1));
+        
+        //iterative way
+        // long long int ans = 1;
+        // for(int i = N; i > 0; i--)
+        // {
+        //     ans *= i;
+        // }
+        // return ans;
     }
 };
 
