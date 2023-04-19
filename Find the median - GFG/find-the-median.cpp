@@ -18,7 +18,6 @@ public:
 		    }
 		    else
 		    {
-		      //  return (int) v[((size)/2)] + v[((size-1)/2)+1]
 		      return (v[mid-1] + v[mid])/2;
 		    }
 		}
