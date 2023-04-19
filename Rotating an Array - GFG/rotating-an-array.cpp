@@ -22,9 +22,7 @@ public:
         //rverse the complete array
         while(i < j)
         {
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
+            swap(arr[i], arr[j]);
             i++;
             j--;
         }
@@ -33,9 +31,7 @@ public:
         //reverse the first part
         while(i < j)
         {
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
+            swap(arr[i], arr[j]);
             i++;
             j--;
         }
@@ -44,9 +40,7 @@ public:
         //reverse the second part
         while(i < j)
         {
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
+            swap(arr[i], arr[j]);
             i++;
             j--;
         }
