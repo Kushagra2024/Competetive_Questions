@@ -14,10 +14,9 @@ class Solution{
         {
             sum = sum % mod + ((a[i] % mod)*(i % mod)) % mod;
         }
-        // sum = sum % mod;
         return (sum % mod);
-;
     }
+    
 };
 
 //{ Driver Code Starts.
