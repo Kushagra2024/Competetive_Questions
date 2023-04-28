@@ -14,12 +14,14 @@ class Solution{
     {
         int i;
         
+        //checks for 1st and 2nd seat
         if((seats[0] == 0) && (seats[1] == 0) && (n != 0))
         {
             seats[0] = 2;
             n--;
         }
         
+        //checks for 2st to last 2nd seat
         for(i = 1; i <= m-2 && n != 0; i++)
         {
             if((seats[i] == 0) && (seats[i-1] == 0) && (seats[i+1] == 0))
@@ -28,7 +30,7 @@ class Solution{
                 n--;
             }
         }
-        
+        //checks for last and 2nd last seat
         if((seats[i] == 0) && (seats[i-1] == 0) && (n != 0))
         {
             seats[i] = 2;
