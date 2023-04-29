@@ -10,6 +10,7 @@ using namespace std;
 class Solution {
   public:
     string toLower(string S) {
+        //transform function converts case
         transform(S.begin(), S.end(), S.begin(), ::tolower);
         return S;
     }
