@@ -17,6 +17,7 @@ class Solution
                 j++;
             }
         }
+        //function to resize the length of string
         s.resize(j);
         return s;
     }
