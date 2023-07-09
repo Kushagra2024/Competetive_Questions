@@ -9,25 +9,26 @@ using namespace std;
 
 class Solution {
   public:
-    int canReach(int A[], int N) 
-    {
-        int reachable = 0;
+        //Approach 2: Peak-Valley approach
+    // int canReach(int A[], int N) 
+    // {
+    //     int reachable = 0;
         
-        for(int i = 0; i < N; i++)
-        {
-            if(i > reachable)
-            {
-                return 0;
-            }
-            reachable = max(reachable, i + A[i]);
-        }
-        return 1;
-    }
+    //     for(int i = 0; i < N; i++)
+    //     {
+    //         if(i > reachable)
+    //         {
+    //             return 0;
+    //         }
+    //         reachable = max(reachable, i + A[i]);
+    //     }
+    //     return 1;
+    // }
     
     
-    /*
-        Approach 1
-        int findMax(int arr[], int i, int j)
+    // /*
+        //Approach 1: Brute Force
+    int findMax(int arr[], int i, int j)
     {
         int max = i, k;
         for(k = i; k <= j; k++)
@@ -65,13 +66,12 @@ class Solution {
             size = A[size_index];
         }
         
-        if(size == 0)
-        {
+        // if(size == 0)
+        // {
             return 0;
-        }
+        // }
         
     }
-    */
 };
 
 //{ Driver Code Starts.
