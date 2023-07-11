@@ -16,6 +16,7 @@ class Solution {
         
         for(int i = 0; i < N; i++)
         {
+            if(reachable == N-1) return 1;
             if(i > reachable)
             {
                 return 0;
