@@ -25,49 +25,6 @@ class Solution {
         }
         return 1;
     }
-    
-    
-        //Approach 1: Brute Force
-    // int findMax(int arr[], int i, int j)
-    // {
-    //     int max = i, k;
-    //     for(k = i; k <= j; k++)
-    //     {
-    //         if(arr[max] <= arr[k])
-    //         {
-    //             max = k;
-    //         }
-    //     }
-    //     return max;
-    // }
-    
-    // int canReach(int A[], int N) 
-    // {
-        
-    //     if(N == 1)
-    //     {
-    //         return 1;
-    //     }
-        
-    //     int i, j, size, size_index = 0;
-        
-    //     size = A[size_index];
-    //     while(size)
-    //     {
-    //         i = size_index + 1;
-    //         j = i-1 + size;
-            
-    //         if(j >= (N-1))
-    //         {
-    //             return 1;
-    //         }
-            
-    //         size_index = findMax(A, i, j);
-    //         size = A[size_index];
-    //     }
-    //     return 0;
-        
-    // }
 };
 
 //{ Driver Code Starts.
